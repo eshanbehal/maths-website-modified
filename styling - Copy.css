@@ -11,6 +11,9 @@ body{
     width: 90%;
 /*    border: 1px solid grey;*/
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 #header{
     display: flex;
@@ -27,7 +30,7 @@ body{
     background: -o-linear-gradient(#E4F2B9 , #B7E953);
     min-width: 400px;
 /*    height: 50px;*/
-    padding: 20px;
+    padding: 30px;
 /*    margin-top: 3px;*/
     display: flex;
     justify-content: center;
@@ -46,7 +49,7 @@ body{
 .submit{
     float: right;
     color: white;
-    padding: 7px;
+    padding: 6.5px;
     background: mediumpurple;
     font-weight: bold;
     font-size: 15px;
@@ -129,21 +132,35 @@ h1 a{
     color: #628F19;
     text-align: justify;
 }
+.sidebars{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebarwrapper{
+    padding: 5px;
+    flex: 50%;
+}
 .sidebar{
-    height: 550px;
+    height: 540px;
     width: 640px;
     border: 1px solid #DCF9B7;
     border-radius: 20px;
+/*    flex: 50%;*/
+    padding: 10px 30px;
 }
+/*
 #leftsidebar{
-    float: left;
+    float: left; 
 }
 #rightsidebar{
     float: right;
 }
+*/
+.sidebar h3{
+    color: #B314DB; 
+}
 #leftsidebar h3{
     font-size: 30px;
-    color: #B314DB;
     font-weight: bold;
     padding: 20px;
     padding-top: 12px;
@@ -151,7 +168,6 @@ h1 a{
 }
 #rightsidebar h3{
     font-size: 32px;
-    color: #B314DB;
     font-weight: bold;
     padding: 20px;
     padding-top:12px;
@@ -200,11 +216,11 @@ h1 a{
     color: #B314DB;
 }
 .footer{
-    height: 50px;
+    height: 90px;
     background: linear-gradient(#F4F18A, #D7D638);
     background: -webkit-linear-gradient(#F4F18A, #D7D638);
     background: -moz-linear-gradient(#F4F18A, #D7D638);
     background: -o-linear-gradient(#F4F18A, #D7D638);
     padding: 20px 5px 20px 20px;
-    margin-top: 15px;
+    margin-top: auto;
 }
